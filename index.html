@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Pelaksana Buka Puasa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>MASJID NURUTTAUBAH KODIM 1402 POLMAN</h1>
+        <a href="https://wa.me/6285333100635?text=Halo%20saya%20ingin%20bertanya" target="_blank">
+            <i class="fa-brands fa-whatsapp icon"></i>
+        </a>
+    </div>
+
+    <div class="container-isi">
+        <div class="isi">
+            <h1>Jadwal Pelaksana Buka Puasa</h1>
+            <p>2025 M / 1446 H</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Menggunakan loop untuk efisiensi -->
+        <script>
+            for (let i = 1; i <= 29; i++) {
+                document.write(`
+                    <a href="malam${i}.html" class="card">
+                        <i class="fas fa-mosque"></i>
+                        <h4>Malam ke-${i}</h4>
+                    </a>
+                `);
+            }
+        </script>
+    </div>
+
+    <div class="hadis">
+        <p>"Barang siapa yang memberi makan orang yang berpuasa, maka baginya pahala seperti orang yang berpuasa itu tanpa mengurangi pahala orang yang berpuasa sedikit pun."</p>
+        <strong>(HR. Tirmidzi No. 807)</strong>
+    </div>
+</body>
+</html>
+
+<style>
+body {
+    font-family: 'Reem Kufi', sans-serif;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: linear-gradient(135deg, #0f9d58, #34a853);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.header h1 {
+    font-size: 22px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header a {
+    font-size: 35px;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.header a:hover {
+    transform: scale(1.2);
+    color: #ffcc00;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.card {
+    background: linear-gradient(135deg, #ffcc00, #ff9900);
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.hadis {
+            background: #fff;
+            padding: 20px;
+            margin: 30px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            font-style: italic;
+            color: #333;
+        }
+</style>
